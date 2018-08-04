@@ -15,20 +15,20 @@ Page({
   },
   togg:function(event){
     const that=this;
-    let i = event.currentTarget.dataset.choosen
-    let ix=event.target.dataset.index
-    let id=event.target.dataset.id
+    let i = event.currentTarget.dataset.choosen;
+    let ix=event.target.dataset.index;
+    let id=event.target.dataset.id;
     that.setData({ clicked: event.currentTarget.dataset.choosen});
-    that.data.pos[i]=ix
+    that.data.pos[i]=ix;
     if(i==id){
-      that.data.mvalue[i] = event.target.dataset.text
-      that.setData({mvalue:that.data.mvalue})
+      that.data.mvalue[i] = event.target.dataset.text;
+      that.setData({mvalue:that.data.mvalue});
       let t = that.data.pos;
-      t=""+t[0]+t[1]+t[2]+t[3]
-      console.log(t)
+      t=""+t[0]+t[1]+t[2]+t[3];
+      console.log(t);
       if(i==3){
-        that.data.img=imgs[t]
-        that.setData({img:that.data.img})
+        that.data.img=imgs[t];
+        that.setData({img:that.data.img});
       }
     }
   }
