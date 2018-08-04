@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class="header">
+    <view class="nav-bar">
+      <view class='nav-item' capture-bind:tap='togg' wx:for="{{menu}}" wx:for-index="index" wx:key="index" wx:for-item="item" data-choosen='{{index}}'>
+      <view>{{mvalue[index]}}</view>
+        <view class='icon-choice' wx:if="{{index==clicked?true:false}}" wx:for-index="ix" wx:for="{{item.level2}}" wx:for-item="per" data-id="{{index}}" data-index="{{ix}}" data-text="{{per}}">{{per}}</view>
+      </view>
+ 
+ 
+    </view>
+  </view>
+  <view>
+    <image class="imge_form" wx:for="{{img}}" wx:for-index="index" wx:key="index" wx:for-item="item" src="{{item}}">
+    </image>
+  </view>
+  <view class="scbz">伤残标准
+    <input class="input" name="userName" placeholder="请输入伤残标准" bindinput="scbzInput" />
+  </view>
+  <view class="wgbz">误工标准
+    <input class="input" name="userName" placeholder="请输入误工标准" bindinput="wgbzInput" />
+  </view>
+</view>

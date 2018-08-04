@@ -1,0 +1,76 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.nav-bar {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 15px;
+  background-color: #fff;
+  z-index: 9;
+}
+
+.nav-item {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+  height: 80rpx;
+  border: 1rpx solid #ddd;
+}
+.invisible{
+  display: none;
+}
+.icon-choice {
+  height: 70rpx;
+  width: 100%;
+  border: 1px solid #ddd; 
+  background: #fff;
+}
+.district-list, .sorting-list, .filter-list {
+  margin-top: 2rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  font-size: 14px;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.choice-list-hide {
+  display: none !important;
+}
+
+.choice-list-show {
+  top: 80rpx;
+  animation: slide 500ms;
+}
+
+.sorting-item {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 40rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.imge_form {
+  height: 280rpx;
+  float: top;
+}
